@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Basic Form</title>
+</head>
+<style>
+    *
+    {
+        background-color: aqua;
+    }
+</style>
+<body>
+     <center>
+        <h1>html_form</h1>
+
+        <form method="POST">
+            {% csrf_token %}
+            <label for="usn">username       </label>
+            <input type="text" name="usn" id="usn"><br>
+            <label for="psw">password       </label>
+            <input type="password" name="psw" id="psw"><br>
+            <label for="psw">confirm password</label>
+            <input type="password" name="psw" id="psw"><br>
+           
+            <input type="submit" value="Submit">
+        </form>
+    </center>   
+</body>
+</html>
